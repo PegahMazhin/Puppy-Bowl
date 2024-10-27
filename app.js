@@ -1,7 +1,7 @@
 
 const BASE_URL = `https://fsa-puppy-bowl.herokuapp.com/api/2409-FTB-ET-WEB-FT/players`;
 
-async const fetchPlayers = () => {
+ const fetchPlayers = async() => {
     try {
         const response = await fetch(BASE_URL);
         const result = await response.json();
@@ -35,7 +35,7 @@ const displayRoster = (players) => {
     });
 }
 
-async const viewPlayerDetails = (playerId) => {
+ const viewPlayerDetails =  async(playerId) => {
     try {
         const response = await fetch(`${BASE_URL}/${playerId}`);
         const result = await response.json();
