@@ -31,7 +31,7 @@ const displayRoster = (players) => {
             <button onclick="viewPlayerDetails(${player.id})">View Details</button>
         `;
         
-        rosterContainer.appendChild(playerCard);
+        rosterContainer.append(playerCard);
     });
 }
 
